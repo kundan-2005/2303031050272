@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="960">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="28" y="60" font-family="Arial" font-size="20" fill="#0f172a">Mock: Frontend UI — Notifications (Mobile)</text>
+  <rect x="28" y="100" width="484" height="80" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="46" y="140" font-family="Arial" font-size="14" fill="#1f2937">Filters: All • Priority</text>
+  <g font-family="Arial" font-size="14" fill="#0f172a">
+    <rect x="28" y="200" width="484" height="80" rx="8" fill="#ffffff" stroke="#e6eef8"/>
+    <text x="46" y="230">• [High] Server outage</text>
+  </g>
+  <text x="28" y="760" font-family="Arial" font-size="12" fill="#64748b">Responsive view — ensure items and buttons are tappable.</text>
+</svg>

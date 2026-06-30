@@ -22,12 +22,12 @@ This file lists the repository push stages, the required screenshot for each sta
 - Stage 5 — Mock screenshots pushed: DONE
   - Placeholders added: `screenshots/1_registration_response.svg`, `screenshots/2_backend_notifications.svg`, `screenshots/3_frontend_ui_desktop.svg`, `screenshots/4_frontend_ui_mobile.svg`, `screenshots/5_logging_console.svg`, `screenshots/6_notify_all_demo.svg`
 
-- Stage 6 — Capture real PNG screenshots: PENDING
+- Stage 6 — Capture real PNG screenshots: DONE
   - Required files to add: `1_registration_response.png`, `2_backend_notifications.png`, `3_frontend_ui_desktop.png` (optional: `4_frontend_ui_mobile.png`, `5_logging_console.png`, `6_notify_all_demo.png`)
 
-- Stage 7 — Commit and push real screenshots: PENDING
+- Stage 7 — Commit and push real screenshots: DONE
 
-- Stage 8 — Final verification and submission: PENDING
+- Stage 8 — Final verification and submission: IN-PROGRESS
   - Steps: run `npm run start:all`, verify UI and API, ensure `.env` not committed, confirm screenshots in `screenshots/`, and push.
 
 Quick commands to add real screenshots and push:
