@@ -65,3 +65,15 @@ Notes:
 - These are sample SVG placeholders to use as visual references. Replace with real screenshots before final submission.
 - Filenames required by the evaluator should be PNGs; when you add real screenshots, use the exact PNG filenames listed earlier.
 
+Postman collection included
+--------------------------
+
+- `postman/notification_collection.postman_collection.json` — import into Postman or run with `newman`. Set the `baseUrl` variable to `http://localhost:4000` for local testing.
+
+More mock placeholders added
+--------------------------
+
+- `4_frontend_ui_mobile.svg` — mobile view mock.
+- `5_logging_console.svg` — backend console/logging mock.
+- `6_notify_all_demo.svg` — notify_all demo output mock.
+

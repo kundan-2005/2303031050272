@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Notification App Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "notification-app-collection"
+  },
+  "item": [
+    {
+      "name": "Register (evaluation service)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"candidateName\": \"Your Name\",\n  \"githubUrl\": \"https://github.com/yourusername/yourrepo\",\n  \"email\": \"you@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://4.224.186.213/evaluation-service/register",
+          "protocol": "http",
+          "host": [
+            "4.224.186.213"
+          ],
+          "path": [
+            "evaluation-service",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Notifications (local)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/notifications?limit=10&page=1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "notifications"
+          ],
+          "query": [
+            { "key": "limit", "value": "10" },
+            { "key": "page", "value": "1" }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:4000"
+    }
+  ]
+}

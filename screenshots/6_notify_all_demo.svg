@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="60" y="80" font-family="Arial" font-size="24" fill="#0f172a">Mock: notify_all Demo Output</text>
+  <rect x="60" y="110" width="1080" height="420" rx="8" fill="#f8fafc" stroke="#e6eef8"/>
+  <text x="80" y="160" font-family="monospace" font-size="14" fill="#0f172a">Batch 1: 100 notifications processed</text>
+  <text x="80" y="190" font-family="monospace" font-size="14" fill="#0f172a">Batch 2: 34 notifications processed</text>
+  <text x="80" y="220" font-family="monospace" font-size="14" fill="#0f172a">Completed: 134 total notifications sent</text>
+  <text x="80" y="300" font-family="Arial" font-size="16" fill="#334155">Tip: Run `node scripts/notify_all_demo.js` and capture the terminal output for `6_notify_all_demo.png`.</text>
+</svg>
