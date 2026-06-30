@@ -38,9 +38,4 @@ git commit -m "Add submission screenshots"
 git push origin main
 ```
 
-If you want, I can:
-- Convert the SVG placeholders to PNGs and commit them as immediate PNG placeholders.
-- Produce `newman` run scripts to automate the Postman requests.
-- Walk you step-by-step to capture the three required screenshots locally.
 
-Tell me which option to do now and I'll act fast.
