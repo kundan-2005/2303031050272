@@ -1,6 +1,6 @@
-## Affordmed Notification Evaluation — Submission Repo
+## Campus Notification Evaluation — Submission Repo
 
-This repository contains the completed submission for the Affordmed campus notification evaluation.
+This repository contains the completed submission for the campus notification evaluation.
 
 What is included
 
