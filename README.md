@@ -1,17 +1,17 @@
-## Campus Notification Evaluation — Submission Repo
+﻿## Campus Notification Evaluation — Submission Repo
 
-This repository contains the completed submission for the campus notification evaluation.
+This repository contains the final submission for the campus notification evaluation.
 
-What is included
+Included in this repo:
 
-- `notification-app-be/` — Express backend with logging middleware integration
-- `notification-app-fe/` — React frontend (Vite) that consumes the backend
-- `logging-middleware/` — small reusable logging package which sends logs to the evaluation log API
-- `notification-system-design.md` — design notes
+- `notification-app-be/` — Express backend with notification routes and logging middleware.
+- `notification-app-fe/` — React frontend built with Vite.
+- `logging-middleware/` — reusable logging package that forwards request logs to the evaluation log API.
+- `notification-system-design.md` — design notes and stage deliverables.
 
-Quick start (local)
+## Quick start
 
-1. Backend
+### Backend
 
 ```powershell
 cd notification-app-be
@@ -19,9 +19,9 @@ npm install
 npm start
 ```
 
-Backend runs on `http://localhost:4000` by default.
+The backend runs on `http://localhost:4000` by default.
 
-2. Frontend
+### Frontend
 
 ```powershell
 cd notification-app-fe
@@ -29,34 +29,34 @@ npm install
 npm run dev
 ```
 
-Frontend expects the backend at `http://localhost:4000` by default. To override, set `VITE_API_BASE` in your environment.
+The frontend expects the backend at `http://localhost:4000` by default.
 
-Security / secrets
+## Configuration
 
-- Do NOT commit real secrets into the repository. Use the provided `.env.example` as a template and store secret values in a local `.env` file (or use your OS-secure env storage).
-- Keep your `clientID` and `clientSecret` private — do not upload them to GitHub.
+Use `.env.example` as a template for local environment variables. Do not commit `.env` or any secret values.
 
-Submission notes
+Example values:
 
-See `SUBMISSION.md` for a concise checklist, what to include for evaluation, and how to capture screenshots and outputs.
+```text
+CLIENT_ID=your_client_id_here
+CLIENT_SECRET=your_client_secret_here
+VITE_API_BASE=http://localhost:4000
+```
 
-Helper scripts
---------------
+## Helper scripts
 
-- `scripts/run_services.ps1` — quick instructions to run backend and frontend.
-- `scripts/run_postman_newman.ps1` — run the Postman collection with `newman` and save results (requires `newman` installed globally).
-- `scripts/commit_screenshots.ps1` — add, commit, and push screenshots with one command.
+- `scripts/run_services.ps1` — instructions for running backend and frontend.
+- `scripts/run_postman_newman.ps1` — run the Postman collection with `newman` and save results.
+- `scripts/commit_screenshots.ps1` — commit screenshot files quickly.
+- `scripts/convert_svgs_to_pngs.js` — convert SVG placeholders in `screenshots/` to PNG files.
 
-- `scripts/convert_svgs_to_pngs.js` — Node script to convert the SVG placeholders in `screenshots/` to PNG files (requires `sharp`).
-
-To create PNG placeholders locally run:
+To generate PNG placeholders locally:
 
 ```powershell
-# install sharp once
 npm install sharp
-
-# convert SVGs to PNGs
 node scripts/convert_svgs_to_pngs.js
 ```
-# 2303031050272
-This project implements a campus notification platform with a Node.js/Express backend, a React frontend, and a reusable logging middleware layer. It includes notification filtering, pagination, structured logging, and a registration-ready submission prepared for the Affordmed evaluation.
+
+## Project summary
+
+This project implements a notification platform with a Node.js/Express backend, a React/Vite frontend, and reusable logging middleware. It includes notification filtering, pagination, structured logs, and documentation for submission.
