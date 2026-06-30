@@ -1,5 +1,7 @@
 # Submission Checklist
 
+This repository is submission-ready for evaluation: code, documentation, Postman collection, and screenshot evidence are included.
+
 Follow these steps to prepare the final submission for the evaluation.
 
 1. Verify code is committed and pushed to your GitHub repository.
