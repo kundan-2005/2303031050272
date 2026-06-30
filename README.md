@@ -46,5 +46,17 @@ Helper scripts
 - `scripts/run_services.ps1` — quick instructions to run backend and frontend.
 - `scripts/run_postman_newman.ps1` — run the Postman collection with `newman` and save results (requires `newman` installed globally).
 - `scripts/commit_screenshots.ps1` — add, commit, and push screenshots with one command.
+
+- `scripts/convert_svgs_to_pngs.js` — Node script to convert the SVG placeholders in `screenshots/` to PNG files (requires `sharp`).
+
+To create PNG placeholders locally run:
+
+```powershell
+# install sharp once
+npm install sharp
+
+# convert SVGs to PNGs
+node scripts/convert_svgs_to_pngs.js
+```
 # 2303031050272
 This project implements a campus notification platform with a Node.js/Express backend, a React frontend, and a reusable logging middleware layer. It includes notification filtering, pagination, structured logging, and a registration-ready submission prepared for the Affordmed evaluation.
