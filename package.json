@@ -1,0 +1,13 @@
+{
+  "name": "affordmed-evaluation-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:be": "cd notification-app-be && npm install && npm start",
+    "start:fe": "cd notification-app-fe && npm install && npm run dev",
+    "start:all": "npx concurrently \"npm run start:be\" \"npm run start:fe\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

@@ -48,6 +48,20 @@ npm install
 npm run dev
 ```
 
+HR Round Checklist
+
+When preparing for HR / final submission ensure the following are included in your GitHub repository and submission form:
+
+- A clear `README.md` with run instructions (root `README.md` is present).
+- `SUBMISSION.md` with the checklist and environment guidance.
+- `screenshots/` folder containing the required screenshots (registration, backend API, frontend UI).
+- Do not commit sensitive values (`clientSecret`) to the repository. Use `.env` locally.
+- In the submission form provide your official college email, full name, GitHub username, roll number, and the `clientID` returned by the registration API.
+
+Optional (recommended):
+- A short recorded video (30-60s) showing the frontend working and API responses.
+- A small note in the README about which files to open for evidence (e.g., `notification-system-design.md`, `screenshots/`).
+
 Questions
 
 If you want, I can help prepare the final screenshots and generate a short submission README you can upload.
