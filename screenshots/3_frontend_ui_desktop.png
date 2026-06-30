@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="40" y="40" width="1120" height="820" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="80" y="100" font-family="Arial" font-size="30" fill="#0f172a">Mock: Frontend UI — Notifications (Desktop)</text>
+  <rect x="80" y="140" width="1040" height="80" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="100" y="180" font-family="Arial" font-size="16" fill="#1f2937">Filter: All | Priority: All | Search: (empty)</text>
+  <g font-family="Arial" font-size="16" fill="#0f172a">
+    <rect x="80" y="240" width="1040" height="120" rx="8" fill="#ffffff" stroke="#e6eef8"/>
+    <text x="100" y="280">• [High] Server outage — Click to view</text>
+    <text x="100" y="310">• [Low] Welcome to the app</text>
+  </g>
+  <text x="80" y="420" font-family="Arial" font-size="14" fill="#64748b">Pagination: 1 2 3 ...</text>
+</svg>
