@@ -39,5 +39,12 @@ Security / secrets
 Submission notes
 
 See `SUBMISSION.md` for a concise checklist, what to include for evaluation, and how to capture screenshots and outputs.
+
+Helper scripts
+--------------
+
+- `scripts/run_services.ps1` — quick instructions to run backend and frontend.
+- `scripts/run_postman_newman.ps1` — run the Postman collection with `newman` and save results (requires `newman` installed globally).
+- `scripts/commit_screenshots.ps1` — add, commit, and push screenshots with one command.
 # 2303031050272
 This project implements a campus notification platform with a Node.js/Express backend, a React frontend, and a reusable logging middleware layer. It includes notification filtering, pagination, structured logging, and a registration-ready submission prepared for the Affordmed evaluation.
