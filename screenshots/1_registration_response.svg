@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect x="40" y="40" width="1120" height="620" rx="10" fill="#0b1220" stroke="#1f2937"/>
+  <text x="80" y="120" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#fff">Mock: Registration Response (masked secret)</text>
+  <rect x="80" y="160" width="1040" height="120" rx="6" fill="#0b1220" stroke="#374151"/>
+  <text x="100" y="200" font-family="monospace" font-size="18" fill="#9ca3af">{</text>
+  <text x="120" y="235" font-family="monospace" font-size="18" fill="#9ca3af">"clientID": "ce51753d-ddf0-49df-84c3-154ba8b1daf2",</text>
+  <text x="120" y="265" font-family="monospace" font-size="18" fill="#9ca3af">"clientSecret": "****MASKED****"</text>
+  <text x="80" y="320" font-family="Arial" font-size="16" fill="#94a3b8">Tip: Mask secrets before uploading real screenshots.</text>
+</svg>

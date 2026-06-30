@@ -54,3 +54,14 @@ Checklist to validate before submission
 
 If you'd like, I can generate a Postman collection (JSON) with the registration and notifications requests ready to import — then you just run them and capture responses. Would you like me to add that collection to the repo?
 
+Example/mock images included
+---------------------------
+
+- `1_registration_response.svg` — placeholder showing masked registration response.
+- `2_backend_notifications.svg` — placeholder showing API response mock.
+- `3_frontend_ui_desktop.svg` — placeholder frontend UI mock for desktop.
+
+Notes:
+- These are sample SVG placeholders to use as visual references. Replace with real screenshots before final submission.
+- Filenames required by the evaluator should be PNGs; when you add real screenshots, use the exact PNG filenames listed earlier.
+
