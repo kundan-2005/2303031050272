@@ -8,27 +8,30 @@ import {
   Pagination,
   Stack,
   Typography,
+  Card,
+  CardContent,
+  Chip,
 } from "@mui/material";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
-import { NotificationCard } from "../components/NotificationCard";
 import { NotificationFilter } from "../components/NotificationFilter";
 import { useNotifications } from "../hooks/useNotifications";
 
 export function NotificationsPage() {
-  const [filter, setFilter] = useState();
-  const [page, setPage] = useState("1");
+  const [filter, setFilter] = useState("All");
+  const [page, setPage] = useState(1);
 
-  const { notifications, totalPages, loading, error } = useNotifications();
+  const { notifications, totalPages, loading, error } = useNotifications(filter, page);
 
-  const unreadCount = 2;
+  const unreadCount = notifications.filter((item) => !item.read).length;
 
   const handleFilterChange = (newFilter) => {
-
+    setFilter(newFilter || "All");
+    setPage(1);
   };
 
   const handlePageChange = (_, newPage) => {
-
+    setPage(newPage);
   };
 
   return (
@@ -48,7 +51,7 @@ export function NotificationsPage() {
         <NotificationFilter value={filter} onChange={handleFilterChange} />
       </Box>
 
-      {true && (
+      {loading && (
         <Box display="flex" justifyContent="center" py={6}>
           <CircularProgress />
         </Box>
@@ -58,27 +61,31 @@ export function NotificationsPage() {
         <Alert severity="error">Failed to load notifications: {error}</Alert>
       )}
 
-      {loading && !error && notifications.length == "0" && (
-        <Alert severity="info">Something message</Alert>
+      {!loading && !error && notifications.length === 0 && (
+        <Alert severity="info">No notifications found.</Alert>
       )}
 
-      {loading && !error && notifications.length > 0 && (
-        <Stack spacing={1.5}>
-          {notifications.map((n) => (
-            <></>
+      {!loading && !error && notifications.length > 0 && (
+        <Stack spacing={2}>
+          {notifications.map((notification) => (
+            <Card key={notification.ID}>
+              <CardContent>
+                <Stack direction="row" justifyContent="space-between" alignItems="center">
+                  <Typography variant="subtitle2" fontWeight={700}>
+                    {notification.Type}
+                  </Typography>
+                  <Chip label={notification.Timestamp} size="small" />
+                </Stack>
+                <Typography sx={{ mt: 1 }}>{notification.Message}</Typography>
+              </CardContent>
+            </Card>
           ))}
         </Stack>
       )}
 
-      {!loading && (
+      {!loading && !error && totalPages > 1 && (
         <Box display="flex" justifyContent="center" mt={4}>
-          <Pagination
-            count={totalPages}
-            page={page}
-            onChange={handlePageChange}
-            color="primary"
-            shape="rounded"
-          />
+          <Pagination count={totalPages} page={page} onChange={handlePageChange} color="primary" shape="rounded" />
         </Box>
       )}
     </Box>
