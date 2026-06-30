@@ -225,7 +225,5 @@ Example: Where logging is added
 
 ---
 
-If you want, I can also:
-- Add a runnable `notify_all` worker script in `notification-app-be` that demonstrates batch processing against the sample data.
-- Generate sample Postman collections and example screenshots (I cannot open your browser but can generate ready-to-use requests).
+- Added a runnable `notify_all` worker script in `notification-app-be` that demonstrates batch processing against the sample data.
 
